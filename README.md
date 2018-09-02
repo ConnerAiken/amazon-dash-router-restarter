@@ -8,10 +8,11 @@ button click, it Telnets into my router/modem and restarts it. This runs as a do
 
 ### Prereqs.
 
+0) A wireless adapter that supports packet sniffing
 1) NodeJS 8+
 2) NPM
 3) Python2 or Python3 or `npm install --global --production windows-build-tools` from an elevated terminal.
-4) Libpcap-dev library (Debian/Ubuntu: `sudo apt-get install libpcap-dev`
+4) Libpcap-dev library (Debian/Ubuntu: `sudo apt-get install libpcap-dev` or Windows: http://www.win10pcap.org/)
 
 ### First Time Dash Setup
 

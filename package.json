@@ -16,7 +16,8 @@
   "scripts": {
     "test": "echo \"Whoops, no tests yet.\"",
     "start": "babel-node src/app.js",
-    "docker": "docker build -t dash-svc . && docker run -it dash-svc"
+    "docker": "docker build -t dash-svc . && docker run -it dash-svc",
+    "scan": "dash-button scan"
   },
   "author": "Conner Aiken",
   "license": "MIT"
