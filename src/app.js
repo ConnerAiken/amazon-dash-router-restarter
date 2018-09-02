@@ -17,12 +17,12 @@ dash.on("detected", function (){
     let params = {
       host: process.env.routerIp,
       port: process.env.routerTelnetPort || 23,
-      shellPrompt: '/ # ',
-      timeout: 1500
+      shellPrompt: process.env.routerTelnetShellPrompt || '/ # ',
+      timeout: process.env.routerTelnetTimeout || 1500
     };
    
     connection.connect(params)
-    .then(connection.exec('reboot'))
+    .then(connection.exec(process.env.routerTelnetCommand || 'reboot'))
     .then(res => { 
         console.log('result:', res)
         say.speak("That's it. I've sent the request.", 'Alex', 0.5); 
