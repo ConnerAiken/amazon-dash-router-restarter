@@ -4,7 +4,7 @@
 I have Centurylink. Centurylink gave me a modem. This modem is garbage. It overheats regularly then restricts external internet access. LAN access remains.
 
 Until I convince CenturyLink to come check it out, I wrote this nodejs script that uses the `node-dash-button` library to detect dash button clicks. Once it detects a dash
-button click, it Telnets into my router/modem and restarts them. This runs as a docker container on my desktop 24/7.
+button click, it Telnets into my router/modem and restarts it. This runs as a docker container on my desktop 24/7.
 
 ### Prereqs.
 
