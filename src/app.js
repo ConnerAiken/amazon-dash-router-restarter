@@ -17,7 +17,7 @@ dash.on("detected", function (){
    
     let params = {
       host: process.env.routerIp,
-      port: 23,
+      port: process.env.routerTelnetPort || 23,
       shellPrompt: '/ # ',
       timeout: 1500
     };
