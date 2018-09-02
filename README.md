@@ -21,9 +21,10 @@ Follow Amazon's instructions to configure your button to send messages when you 
 
 To find a dash on your network, run the following from the node-dash-button directory in node_modules:
 
-# you may need to use sudo due to libpcap running in permiscuous mode
-$ cd node_modules/node-dash-button
-$ node bin/findbutton
+you may need to use sudo due to libpcap running in permiscuous mode
+
+$ cd node_modules/node-dash-button 
+$ node bin/findbutton 
 
 ### Setting up the Dash with this service
 
