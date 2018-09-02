@@ -6,7 +6,6 @@ import telnet from "telnet-client";
 let dash;
 
 utils.loadENV();
-console.log(process.env);
 dash = dashBtn([process.env.dashMac], null, null, 'all'); 
 say.speak("The dash router switch service has started.", 'Alex', 0.5);
 
