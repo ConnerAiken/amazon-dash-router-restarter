@@ -1,0 +1,23 @@
+{
+  "name": "dash-router-switch",
+  "version": "1.0.0",
+  "description": "A script that uses node-dash-button to restart my router/modem",
+  "main": "src/app.js",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "node-dash-button": "^0.6.1",
+    "node-gyp": "^3.8.0",
+    "say": "^0.15.0",
+    "telnet-client": "^0.15.8"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "scripts": {
+    "test": "echo \"Whoops, no tests yet.\"",
+    "start": "babel-node src/app.js",
+    "docker": "docker build -t dash-svc . && docker run -it dash-svc"
+  },
+  "author": "Conner Aiken",
+  "license": "MIT"
+}
